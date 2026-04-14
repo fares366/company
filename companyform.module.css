@@ -1,0 +1,120 @@
+.formContainer {
+    width: 100%;
+}
+
+.gridInputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.fullWidth {
+    grid-column: span 2;
+}
+
+.inputGroup {
+    width: 100%;
+}
+
+.inputGroup label {
+    font-size: 13px;
+    color: var(--text-gray);
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.inputField, .textArea {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    color: white;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.inputField:focus, .textArea:focus {
+    border-color: var(--gold);
+    background: rgba(255, 163, 0, 0.02);
+}
+
+.textArea {
+    height: 120px;
+    resize: none;
+}
+
+.phoneWrapper {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.countryCode {
+    font-size: 14px;
+    margin-right: 8px;
+    color: white;
+}
+
+.phoneInput {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 14px 0;
+    color: white;
+    outline: none;
+}
+
+.submitBtn {
+    width: 100%;
+    background: var(--gold);
+    color: black;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.submitBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 163, 0, 0.2);
+}
+
+.footerText {
+    text-align: center;
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+.goldLink {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.goldLink:hover {
+    text-decoration: underline;
+}
+
+/* التوافق مع الموبايل */
+@media (max-width: 600px) {
+    .gridInputs {
+        grid-template-columns: 1fr;
+    }
+    .fullWidth {
+        grid-column: span 1;
+    }
+}

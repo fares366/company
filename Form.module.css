@@ -1,0 +1,93 @@
+.formCard {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 35px;
+    margin-bottom: 30px;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.iconBox {
+    width: 42px; height: 42px;
+    background: rgba(255, 163, 0, 0.1);
+    border: 1px solid rgba(255, 163, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9px;
+}
+
+.gridInputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.fullWidth { grid-column: span 2; }
+
+.inputGroup label { 
+    font-size: 13px; 
+    color: var(--text-gray); 
+    display: block; 
+    margin-bottom: 8px; 
+}
+
+.inputField, .textArea {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.inputField:focus { border-color: var(--gold); }
+.textArea { height: 120px; }
+
+.phoneWrapper {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0 12px;
+}
+.phoneWrapper input { border: none; background: transparent; }
+
+.submitBtn {
+    width: 100%;
+    background: var(--gold);
+    color: black;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.submitBtn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255, 163, 0, 0.2); }
+
+.footerText { text-align: center; color: var(--text-gray); font-size: 14px; }
+.goldLink { color: var(--gold); text-decoration: none; font-weight: 700; }
+.goldLink:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+    .gridInputs { grid-template-columns: 1fr; }
+    .fullWidth { grid-column: span 1; }
+    .formCard { padding: 20px; }
+}

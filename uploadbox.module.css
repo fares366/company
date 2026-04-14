@@ -1,0 +1,41 @@
+.uploadSection { margin-bottom: 25px; }
+
+.uploadLabel {
+    display: block;
+    font-size: 13px;
+    color: var(--text-gray);
+    margin-bottom: 12px;
+}
+
+.uploadBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.uploadBox:hover { border-color: var(--gold); background: rgba(255, 163, 0, 0.02); }
+
+.plusIcon {
+    width: 48px;
+    height: 48px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: white;
+}
+
+.uploadInfo strong { display: block; color: white; font-size: 15px; margin-bottom: 4px; }
+.uploadInfo span { font-size: 12px; color: var(--text-gray); }
+
+@media (max-width: 480px) {
+    .uploadBox { flex-direction: column; text-align: center; }
+}
